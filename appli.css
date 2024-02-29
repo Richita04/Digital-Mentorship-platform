@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.logo{
+    font-size: 20px;
+    color: rgb(124, 148, 92);
+
+
+    padding-top: 2px;
+    margin-right: 250px;
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #7d988b;
+}
+
+.nav-links{
+    flex: 1;
+    text-align:center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a0c988;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+
+
+.login{
+    flex: 1;
+    text-align:right;
+}
+
+.login ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.login ul li a{
+    color: rgb(124, 148, 92);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #7cb073;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.login ul li:hover::after{
+    width: 100%;
+
+}
+
+.signup{
+    border: 1px solid black;
+    border-radius: 20%;
+    
+    background-color: rgb(60, 54, 54);
+    display: inline-block;
+}
+.signup li a{
+    color: white;
+}
+
+.homepage{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(images/ss3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.homepage a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    font-size: 23px;
+    border: 1px solid rgb(130, 169, 130);
+    background-color: #7cb073;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.homepage a:hover{
+    background-color: rgb(71, 58, 255);
+    padding: 30px;
+}

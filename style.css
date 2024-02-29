@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/top.png);
+    background-color: rgb(213, 209, 209); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    color: rgb(124, 148, 92);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 2px;
+    margin-right: 250px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align:center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a0c988;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+
+
+.login{
+    flex: 1;
+    text-align:right;
+}
+
+.login ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.login ul li a{
+    color: rgb(124, 148, 92);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #7cb073;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.login ul li:hover::after{
+    width: 100%;
+
+}
+
+.signup{
+    border: 1px solid black;
+    border-radius: 20%;
+    
+    background-color: rgb(60, 54, 54);
+    display: inline-block;
+}
+.signup li a{
+    color: white;
+}
+
+.findmentor{
+    flex: 1;
+    position: absolute;
+    top: 81%;
+    left: 14%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.findmentor a{
+    color: #777;
+    text-decoration: none;
+}
+
+.findmentor:hover{
+    border: 1px solid black;
+    background: rgb(169, 183, 150)
+}
+
+.findmentor a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.becomemen{
+    flex: 1;
+    position: absolute;
+    top: 81%;
+    right: 12%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.becomemen a{
+    color: #777;
+    text-decoration: none;
+}
+
+.becomemen:hover{
+    border: 1px solid black;
+    background: rgb(168, 180, 153)
+}
+
+.becomemen a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.down{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(images/down.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+/*
+.splitface{
+    width: 100%;
+    background-image: url(images/splitscreen.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+.splitface h1{
+    font-size: 62px;
+}
+
+.splitface p{
+    margin: 20px 0 40px;
+    font-size: 15px;
+    color: aliceblue;
+}
+*/
+
+
+
+
+/*-----------------*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coursecol{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.coursecol1{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.coursecol2{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.coursecol3{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.coursecol4{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.coursecol5{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.coursecol6{
+    flex-basis: 31%;
+    background: #c3c8bd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.coursecol1::after{
+    font-size: 30px;
+}
+.coursecol1:hover{
+    background-image: url(images/findmentor.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol1 p:hover{
+    color: transparent;
+
+}
+
+.coursecol2:hover{
+    background-image: url(images/conver.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol2 p:hover{
+    color: transparent;
+
+}
+
+.coursecol3 p:hover{
+    color: transparent;
+
+}
+
+.coursecol3:hover{
+    background-image: url(images/workingtog.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol3 p:hover{
+    color: transparent;
+
+}
+
+.coursecol4 p:hover{
+    color: transparent;
+
+}
+
+.coursecol4:hover{
+    background-image: url(images/mentee.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol4 p:hover{
+    color: transparent;
+
+}
+
+.coursecol5 p:hover{
+    color: transparent;
+
+}
+
+.coursecol5:hover{
+    background-image: url(images/busy.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol5 p:hover{
+    color: transparent;
+
+}
+
+.coursecol6 p:hover{
+    color: transparent;
+
+}
+
+.coursecol6:hover{
+    background-image: url(images/money.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.coursecol6 p:hover{
+    color: transparent;
+
+}
+
+
+
+
+
+.mentorbysub{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.box{
+    display: inline-block;
+    flex-basis: 31%;
+    background: #3f3c3c;
+    margin-bottom: 5%;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.box:hover{
+    background-color: #a4ab9c;
+    padding: 80px 100px;
+}
+
+.discover{
+    text-align: center;
+    background-color: black;
+    padding-top: 50px;
+}
+
+.discover h2{
+    color: white;
+    font-size: 37px;
+}
+
+.bottom{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Screenshot\ 2024-01-25\ at\ 2.09.45\ PM.png);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.findment{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/findmentor.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.heading1{
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-left: 33%;
+}
+
+.heading1 h1{
+    font-size: 50px;
+}
+
+
+.para{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.para a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(145, 183, 145);
+    background-color: rgb(145, 183, 145);
+    padding: 20px;
+}
+
+.bar{
+    min-height: 200px;
+    width: 100%;
+    background-image: url(images/bar.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.yolo{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1%;
+    color: #575a58;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: rgb(36,38,43);
+    padding:70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding:0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color:rgb(255,255,255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #a4ab9c; 
+    height:2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform: capitalize;
+    color:  rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display:block;
+}
+.footer-col ul li a:hover{
+    color:rgb(255,255,255);
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255,255,255);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+@media(max-width: 574px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width:100%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background: #a4ab9c;
+    margin: 26px auto;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.col{
+    flex: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonal{
+        background: #fff;
+        padding: 30px;
+}
+.testimonal img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0
+}
+.stars{
+    color: #a4ab9c;
+    margin-bottom: 20px;    
+}
